@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  height: 100vh;
+  color: #333;
+  background-color: #ffcc80; /* Vibrant background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80rem;
+  gap: 3rem;
+  padding: 4rem;
+  border-radius: 2rem; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Light background color for container */
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 6rem; /* Larger font size */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem; /* Increased margin bottom */
+}
+
+h2 {
+  font-size: 2.8rem; /* Larger font size */
+  font-weight: 700;
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem; /* Increased margin bottom */
+}
+
+input {
+  font-family: inherit;
+  color: #444;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 1.6rem 3.2rem; /* Increased padding */
+  border: 2px solid #ff9966; /* Vibrant border color */
+  border-radius: 2rem; /* Rounded corners */
+  width: 100%;
+  max-width: 40rem; /* Increased max-width */
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff5722; /* Brighter border color on focus */
+}
+
+.weather {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.day {
+  background-color: #fff;
+  padding: 2rem 0 3rem;
+  width: 16rem; /* Increased width */
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem; /* Increased gap */
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.day:hover {
+  transform: translateY(-5px);
+}
+
+.day span {
+  font-size: 5.2rem; /* Larger font size */
+  font-weight: 700;
+  color: #ff5722; /* Vibrant text color */
+}
+
+.day.important {
+  background-color: #ffeecc; /* Lighter background color */
+  border: 2px solid #ff9966; /* Vibrant border color */
+  box-shadow: 0 0 16px rgba(255, 153, 102, 0.5);
+}
+
+.loader {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #444;
+}
