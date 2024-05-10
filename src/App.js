@@ -96,7 +96,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <h1>Classy Weather</h1>
+        <h1>SKY CAST</h1>
         <Input
           location={this.state.location}
           onChangeLocation={this.setLocation}
